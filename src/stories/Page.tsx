@@ -3,6 +3,8 @@ import React from 'react';
 import { Header } from './Header';
 import './page.css';
 
+import { Component } from '../components';
+
 type User = {
   name: string;
 };
@@ -18,6 +20,8 @@ export const Page: React.FC = () => {
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
+
+      <Component />
 
       <section className="storybook-page">
         <h2>Pages in Storybook</h2>
